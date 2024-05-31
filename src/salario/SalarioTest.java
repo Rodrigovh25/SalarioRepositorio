@@ -71,6 +71,18 @@ class SalarioTest {
         int esperado = 21500;
         assertEquals(esperado, resultado);
     }
+    
+    /*test añadido para github*/
+    @Test
+    void test4() {
+        int antiguedad = 3;
+        int plus = 1501;
+        salario = new Salario(antiguedad, plus);
+        System.out.println("Prueba cuando antiguedad <= 3 y plus > 1000");
+        int resultado = salario.calcularSalarioFinal();
+        int esperado = 21501;
+        assertEquals(esperado, resultado);
+    }
 	
 
 }
